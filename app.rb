@@ -34,7 +34,7 @@ class Journal < Sinatra::Application
     def date
       date = Date.today.to_s
     end
-    
+
     # Get entry id
     def entry_id
       entry_id = Entry.get params[:id]
@@ -56,7 +56,9 @@ class Journal < Sinatra::Application
   # Save entry
   post '/create' do
     entry = Entry.new
-    entry.attributes = { :content => params[:content], :created_on => date }
+    entry.attributes = {
+         :content => params[:content],
+      :created_on => date }
     entry.save
     redirect '/'
   end
@@ -74,7 +76,8 @@ class Journal < Sinatra::Application
   # Edit entry
   put '/:id' do
     entry = entry_id
-    entry.attributes = { :content => params[:content] }
+    entry.attributes = {
+      :content => params[:content] }
     entry.save
     redirect '/'
   end
