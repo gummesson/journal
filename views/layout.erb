@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= "#{APP_NAME}" %> | <%= "#{APP_DESC}" %></title>
+    <link rel="stylesheet" href="/global.css" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cousine:400" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+      <h1 class="brand">
+        <a href="/" title="<%= "#{APP_NAME}" %> | <%= "#{APP_DESC}" %>" alt="<%= "#{APP_NAME}" %> | <%= "#{APP_DESC}" %>">
+          <%= "#{APP_NAME}" %>
+        </a>
+      </h1><!-- .brand -->
+      </header><!-- .app-header -->
+      <div class="app-content">
+        <%= yield %>
+      </div><!-- .app-content -->
+    </div><!-- .app-container -->
+  </body>
+</html>

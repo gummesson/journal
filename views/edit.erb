@@ -1,0 +1,11 @@
+<section class="edit">
+    <form method="post" action="/<%= @entry.id %>">
+      <input type="hidden" name="_method" value="put">
+      <input type="submit" value="Save" class="hover">
+      <textarea name="content"><%= @entry.content %></textarea>
+    </form>
+    <form method="post" action="/<%= @entry.id %>">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Delete" class="warning">
+    </form>
+</section><!-- .edit -->

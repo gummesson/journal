@@ -1,0 +1,180 @@
+/* Box Sizing */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing   : border-box;
+  box-sizing        : border-box;
+}
+
+/* Body */
+
+body {
+  font            : 400 112.5%/1.5 "Montserrat", Helvetica, Arial, Sans-serif;
+  color           : #108bbb;
+  background-color: #fdfdfd;
+}
+
+::selection {
+  color: #fdfdfd;
+  background-color: #108bbb;
+}
+
+/* Main */
+
+.app-container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.app-header {
+  padding: 2em;
+}
+
+.entries {
+  margin-top: 2.5em;
+  overflow  : hidden;
+}
+
+.message {
+  margin-top: 2.5em;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  margin     : 0.125em 0;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+  .headline {
+    padding-bottom: 0.25em;
+    border-bottom : 2px solid #108bbb;
+  }
+
+
+/* Paragraphs */
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Links */
+
+a,
+a:visited {
+  color: #108bbb;
+}
+
+.brand,
+.brand a {
+  color: #fefefe;
+}
+
+a,
+a:visited,
+.brand a:hover,
+.brand a:focus {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+a:hover,
+a:focus {
+  border-bottom: 1px solid #108bbb;
+}
+
+/* Lists */
+
+.list {
+  list-style: circle;
+}
+  
+  .list li {
+    margin-left: 2em;
+    line-height: 2;
+  }
+
+/* Forms */
+
+textarea,
+input[type="reset"], 
+input[type="submit"] {
+  padding: 8px 12px;
+}
+
+textarea {
+  display         : block;
+  width           : 100%;
+  height          : 420px;
+  font            : 400 112.5%/1.5 "Cousine", "Liberation Mono", Consolas, "DejaVu Sans Mono", Menlo, Monaco, Andale Mono, monospace;
+  color           : #444;
+  background-color: inherit;
+  border          : 2px solid #108bbb;
+  outline         : none;
+}
+
+input[type="reset"], 
+input[type="submit"] {
+  margin-right: 0.75em;
+  width       : 20%;
+  font        : inherit;
+  line-height : 1;
+  border      : 0;
+}
+
+  .hover:hover,
+  .warning:hover {
+    cursor: pointer;
+  }
+
+    .hover:hover,
+    .hover:active {
+      background-color:#46b655;
+    } 
+
+    .warning:hover,
+    .warning:active {
+      background-color: #bb1133;
+    }
+
+/* Shared */
+
+.app-header,
+input[type="reset"], 
+input[type="submit"] {
+  background-color: #108bbb;
+  color           : #fefefe;
+}
+
+.app-header,
+.app-content,
+.options,
+.create,
+.edit,
+.list,
+.date,
+.error,
+textarea,
+input[type="reset"], 
+input[type="submit"] {
+  margin-top: 1.5em;
+}
+
+  a:active,
+  input[type="reset"]:active, 
+  input[type="submit"]:active {
+      position: relative;
+      top     : 1px;
+    } 

@@ -1,0 +1,8 @@
+<section class="create">
+  <form method="post" action="/create">
+    <input type="submit" value="Save" class="hover">
+    <textarea name="content" placeholder="Dear Journal..."></textarea>
+    <input type="reset" value="Discard" class="warning">
+  </form>
+</section>
+<%= erb :message, :layout => false %>

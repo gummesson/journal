@@ -1,0 +1,17 @@
+<section class="options">
+<form method="get" action="/create">
+  <input type="submit" value="Create" class="hover">
+</form>
+</section><!-- .options -->
+<section class="entries">
+  <h2 class="headline">Entries</h2>
+  <ul class="list">
+  <% @entry.each do |entry| %> 
+    <li>
+      <a href="/<%= entry.id %>" title="<%= entry.created_on %>" alt="<%= entry.created_on %>">
+        <%= entry.created_on %>
+      </a>
+    </li>
+  <% end %>
+</ul><!-- .list -->
+</section><!-- .entries -->
