@@ -5,7 +5,7 @@ require 'data_mapper'
 require 'date'
 
 # App requirements
-require './lib/database'
+require './lib/models'
 require './lib/helpers'
 require './lib/auth'
 
