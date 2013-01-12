@@ -1,7 +1,7 @@
-# Database setup
+# Setup database
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/db/journal.db")
 
-# Entry creation
+# Entry properties
 class Entry
   include DataMapper::Resource
   property         :id, Serial

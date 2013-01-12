@@ -1,6 +1,5 @@
-# Helpers
 helpers do
-  # Send message
+  # Display message
   def message(message)
     @message = message
     erb :message
@@ -8,11 +7,16 @@ helpers do
 
   # Parse date
   def date
-    date = Date.today
+    Date.today
+  end
+
+  # Get content
+  def content
+    params[:content]
   end
 
   # Get entry id
   def entry_id
-    entry_id = Entry.get params[:id]
+    Entry.get params[:id]
   end
 end
