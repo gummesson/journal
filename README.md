@@ -1,6 +1,6 @@
 # Journal
 
-A simple journal/diary app. Built with [Sinatra](http://www.sinatrarb.com/ "Sinatra") and powered by [DataMapper](http://datamapper.org "DataMapper").
+A simple journal/diary app. Built with [Sinatra](http://www.sinatrarb.com/ "Sinatra") and powered by [DataMapper](http://datamapper.org "DataMapper"). It also uses `Rack::Basic:Auth` for basic user authenication.
 
 ## Usage
 
@@ -14,7 +14,7 @@ And then:
 
 	rackup
 
-After that, go to `localhost:9292`.
+After that, go to `localhost:9292`. The default username is `username` and the default password is `password`.
 
 ## Requirements
 
