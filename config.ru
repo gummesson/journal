@@ -6,4 +6,4 @@ Bundler.require
 require './app'
 
 # ...and run it.
-run Journal
+run Sinatra::Application

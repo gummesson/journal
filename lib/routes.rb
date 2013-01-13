@@ -1,3 +1,9 @@
+# Index
+get '/' do
+  @entry = Entry.all :order => :id.desc
+  erb :index
+end
+
 # Create entry
 get '/create' do
   message("Today's Date: #{date}")
