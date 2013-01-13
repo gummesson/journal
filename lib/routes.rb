@@ -1,6 +1,6 @@
 # Index
 get '/' do
-  @entry = Entry.all :order => :id.desc
+  @entry = Entry.all(:order => :id.desc)
   erb :index
 end
 
