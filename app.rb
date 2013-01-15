@@ -8,8 +8,11 @@ require 'date'
 APP_NAME = "Journal."
 APP_DESC = "What did you do today?"
 
+# Set app directory as root
+$:.unshift File.dirname(__FILE__)
+
 # App requirements
-require './lib/models'
-require './lib/helpers'
-require './lib/routes'
-require './lib/auth'
+require 'lib/models'
+require 'lib/helpers'
+require 'lib/routes'
+require 'lib/auth'
