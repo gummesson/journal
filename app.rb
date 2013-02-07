@@ -10,9 +10,6 @@ require 'date'
 APP_NAME = "Journal."
 APP_DESC = "What did you do today?"
 
-# Set app directory as root
-$:.unshift File.dirname(__FILE__)
-
 # App Library
 require 'lib/models'
 require 'lib/helpers'

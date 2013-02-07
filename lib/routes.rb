@@ -13,7 +13,7 @@ end
 # Save entry
 post '/create' do
   Entry.create(:created_on => date,
-                  :content => content)
+               :content    => content)
   redirect '/'
 end
 
